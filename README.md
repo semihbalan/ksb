@@ -32,6 +32,15 @@ Paste [`KSB.md`](./KSB.md) into an agent system prompt (~400 tokens).
 
 ## Install
 
+**From PyPI** (after first publish):
+
+```bash
+pip install ksb
+ksb -V
+```
+
+**From source:**
+
 ```bash
 git clone https://github.com/semihbalan/ksb.git
 cd ksb
@@ -118,7 +127,11 @@ pip install -e ".[dev]"
 pytest -q
 ```
 
-See [CONTRIBUTING.md](./CONTRIBUTING.md).
+CI runs on every push (Python 3.10–3.13). See [CONTRIBUTING.md](./CONTRIBUTING.md) and [docs/publishing.md](./docs/publishing.md) for release / PyPI.
+
+## Topics
+
+`ai` · `agents` · `compiler` · `language` · `llm` · `python` · `transpiler`
 
 ## License
 
