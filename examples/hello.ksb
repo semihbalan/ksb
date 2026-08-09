@@ -1,0 +1,4 @@
+// Hello KSB
+@ main()->s {
+  ^ "hello ksb"
+}

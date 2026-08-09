@@ -1,0 +1,15 @@
+~ time
+~ path
+~ tool
+~ str
+~ cli
+~ log
+
+@ main()->a {
+  = t time.iso()
+  = p path.join("a", "b", "c.ksb")
+  = msg str.upper(str.trim("  hello  "))
+  = r tool.ok({when: t, file: p, msg: msg, argc: cli.argc()})
+  log.info(r)
+  ^ r
+}

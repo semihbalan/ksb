@@ -1,0 +1,11 @@
+~ fs
+~ json
+~ log
+
+@ main()->a {
+  = path "examples/_tmp_ksb.json"
+  fs.write(path, json.dump({ok: T, n: 42}))
+  = data json.parse(fs.read(path))
+  log.info("loaded", data)
+  ^ data.n
+}

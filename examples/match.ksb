@@ -1,0 +1,33 @@
+// Pattern match (#) demo
+
+@ classify(x:a)->s {
+  ^ # x {
+    0 => "zero"
+    1 => "one"
+    n => "n={n}"
+  }
+}
+
+@ head(xs:l)->a {
+  ^ # xs {
+    [] => N
+    [h, *t] => h
+    _ => N
+  }
+}
+
+@ status_msg(r:m)->s {
+  ^ # r {
+    {ok: T, msg: m} => m
+    {ok: F, err: e} => "err:{e}"
+    _ => "unknown"
+  }
+}
+
+@ main()->a {
+  = a classify(0)
+  = b classify(7)
+  = c head([10,20,30])
+  = d status_msg({ok: T, msg: "fine"})
+  ^ [a, b, c, d]
+}

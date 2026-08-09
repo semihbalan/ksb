@@ -1,0 +1,7 @@
+@ double(x:i)->i { ^ x*2 }
+@ inc(x:i)->i { ^ x+1 }
+
+@ main()->i {
+  // 3 | double | inc  =>  inc(double(3)) = 7
+  ^ 3 | double | inc
+}

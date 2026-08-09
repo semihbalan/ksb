@@ -1,0 +1,11 @@
+// Local module example — imported via `~ mathx` or `~ "lib/mathx"`
+
+@ add(a:i,b:i)->i {
+  ^ a+b
+}
+
+@ clamp(x:i,lo:i,hi:i)->i {
+  ? x<lo { ^ lo }
+  ? x>hi { ^ hi }
+  ^ x
+}

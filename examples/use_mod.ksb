@@ -1,0 +1,9 @@
+~ "lib/mathx"
+~ log
+
+@ main()->i {
+  = n add(10, 32)
+  = c clamp(100, 0, 50)
+  log.info("sum", n, "clamp", c)
+  ^ c
+}
