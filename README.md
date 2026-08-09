@@ -33,8 +33,9 @@ Paste [`KSB.md`](./KSB.md) into an agent system prompt (~400 tokens).
 ## Install
 
 ```bash
-pip install -e ".[dev]"   # from clone
-# or later: pip install ksb
+git clone https://github.com/semihbalan/ksb.git
+cd ksb
+pip install -e ".[dev]"
 ksb -V
 ```
 

@@ -5,7 +5,7 @@ Thanks for helping improve KSB — a dense language for AI agents.
 ## Dev setup
 
 ```bash
-git clone https://github.com/<you>/ksb.git
+git clone https://github.com/semihbalan/ksb.git
 cd ksb
 pip install -e ".[dev]"
 pytest -q
